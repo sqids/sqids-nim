@@ -237,7 +237,8 @@ proc decode*(self: Sqids, id: string): seq[uint64] =
   alphabet.reverse()
 
   # now it's safe to remove the prefix character from ID, it's not needed anymore
-  id.delete(0 .. 0)
+  # id.delete(0 .. 0)
+  id = id[1 .. ^1]
 
   # decode
   while id.len > 0:

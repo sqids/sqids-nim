@@ -23,15 +23,15 @@ test "incremental numbers":
 
   const ids = {
     "bM": [0'u64],
-    "Uk": [1],
-    "gb": [2],
-    "Ef": [3],
-    "Vq": [4],
-    "uw": [5],
-    "OI": [6],
-    "AX": [7],
-    "p6": [8],
-    "nJ": [9],
+    "Uk": [1'u64],
+    "gb": [2'u64],
+    "Ef": [3'u64],
+    "Vq": [4'u64],
+    "uw": [5'u64],
+    "OI": [6'u64],
+    "AX": [7'u64],
+    "p6": [8'u64],
+    "nJ": [9'u64],
   }
 
   for (id, numbers) in ids:
@@ -43,15 +43,15 @@ test "incremental numbers, same index 0":
 
   const ids = {
     "SvIz": [0'u64, 0],
-    "n3qa": [0, 1],
-    "tryF": [0, 2],
-    "eg6q": [0, 3],
-    "rSCF": [0, 4],
-    "sR8x": [0, 5],
-    "uY2M": [0, 6],
-    "74dI": [0, 7],
-    "30WX": [0, 8],
-    "moxr": [0, 9],
+    "n3qa": [0'u64, 1],
+    "tryF": [0'u64, 2],
+    "eg6q": [0'u64, 3],
+    "rSCF": [0'u64, 4],
+    "sR8x": [0'u64, 5],
+    "uY2M": [0'u64, 6],
+    "74dI": [0'u64, 7],
+    "30WX": [0'u64, 8],
+    "moxr": [0'u64, 9],
   }
 
   for (id, numbers) in ids:
@@ -63,15 +63,15 @@ test "incremental numbers, same index 1":
 
   const ids = {
     "SvIz": [0'u64, 0],
-    "nWqP": [1, 0],
-    "tSyw": [2, 0],
-    "eX68": [3, 0],
-    "rxCY": [4, 0],
-    "sV8a": [5, 0],
-    "uf2K": [6, 0],
-    "7Cdk": [7, 0],
-    "3aWP": [8, 0],
-    "m2xn": [9, 0],
+    "nWqP": [1'u64, 0],
+    "tSyw": [2'u64, 0],
+    "eX68": [3'u64, 0],
+    "rxCY": [4'u64, 0],
+    "sV8a": [5'u64, 0],
+    "uf2K": [6'u64, 0],
+    "7Cdk": [7'u64, 0],
+    "3aWP": [8'u64, 0],
+    "m2xn": [9'u64, 0],
   }
 
   for (id, numbers) in ids:
