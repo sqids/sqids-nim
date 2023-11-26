@@ -39,9 +39,9 @@ Simple encode & decode:
 
 ```nim
 import sqids
-let sqids = initSqids()
-let id = sqids.encode([1, 2, 3]) # "86Rf07"
-let numbers = sqids.decode(id)   # @[1'u64, 2, 3]
+let sqid = initSqids()
+let id = sqid.encode([1, 2, 3]) # "86Rf07"
+let numbers = sqid.decode(id)   # @[1'u64, 2, 3]
 ```
 
 > **Note**
@@ -51,9 +51,9 @@ Enforce a *minimum* length for IDs:
 
 ```nim
 import sqids
-let sqids = initSqids(minLength = 10)
-let id = sqids.encode([1'u64, 2, 3]) # "86Rf07xd4z"
-const numbers = sqids.decode(id)     # @[1'u64, 2, 3]
+let sqid = initSqids(minLength = 10)
+let id = sqid.encode([1'u64, 2, 3]) # "86Rf07xd4z"
+let numbers = sqid.decode(id)       # @[1'u64, 2, 3]
 ```
 
 Randomize IDs by providing a custom alphabet:
@@ -61,11 +61,11 @@ Randomize IDs by providing a custom alphabet:
 ```nim
 import sqids
 
-let sqids = initSqids(
+let sqid = initSqids(
     alphabet = "FxnXM1kBN6cuhsAvjW3Co7l2RePyY8DwaU04Tzt9fHQrqSVKdpimLGIJOgb5ZE",
 )
-let id = sqids.encode([1'u64, 2, 3]) # "B4aajs"
-let numbers = sqids.decode(id)   # @[1, 2, 3]
+let id = sqid.encode([1'u64, 2, 3]) # "B4aajs"
+let numbers = sqid.decode(id)       # @[1, 2, 3]
 ```
 
 Prevent specific words from appearing anywhere in the auto-generated IDs:
@@ -74,9 +74,9 @@ Prevent specific words from appearing anywhere in the auto-generated IDs:
 import std / sets
 import sqids
 
-let sqids = initSqids(blocklist = ["86Rf07"].toHashSet())
-let id = sqids.encode([1'u64, 2, 3]) # "se8ojk"
-let numbers = sqids.decode(id)       # @[1'u64, 2, 3]
+let sqid = initSqids(blocklist = ["86Rf07"].toHashSet())
+let id = sqid.encode([1'u64, 2, 3]) # "se8ojk"
+let numbers = sqid.decode(id)       # @[1'u64, 2, 3]
 ```
 
 ## 📝 License
