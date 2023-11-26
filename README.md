@@ -30,7 +30,7 @@ Not good for:
 Install Sqids via:
 
 ```bash
-nimble install https://github.com/sqids/sqids-nim
+nimble install sqids
 ```
 
 ## 👩‍💻 Examples
